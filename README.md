@@ -53,4 +53,4 @@ Acesse http://localhost:3000 (ou outra porta mostrada no terminal)
 
 
 ## Contato
-Pedro Furlan - LinkedIn | GitHub
+Pedro Furlan - [LinkedIn](https://www.linkedin.com/in/pedro-furlan-/) 
