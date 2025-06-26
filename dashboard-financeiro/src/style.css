@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f3fa; /* cinza clarinho */
+  min-height: 100vh;
+  color: #3c2f6b; /* roxo escuro */
+  padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 650px;
+  background: #ffffff; /* branco */
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(124, 75, 162, 0.3); /* sombra roxa suave */
+  margin: auto;
+  color: #3c2f6b; /* texto roxo escuro */
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #3c2f6b;
+}
+
+/* Saldo */
+.saldo {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.positivo {
+  color: #4caf50; /* verde receita */
+  font-weight: 700;
+}
+
+.negativo {
+  color: #f44336; /* vermelho despesa */
+  font-weight: 700;
+}
+
+/* Inputs e select */
+input,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1.8px solid #b9aedc; /* roxo claro */
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+  color: #3c2f6b;
+  background-color: #f9f8fe; /* branco com toque roxo */
+}
+
+input:hover,
+select:hover,
+input:focus,
+select:focus {
+  border-color: #7c4dff; /* roxo vibrante */
+  background-color: #ede9ff;
+  color: #3c2f6b;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  background: #7c4dff; /* roxo vibrante */
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background: #5e35b1; /* roxo escuro */
+}
+
+/* Lista de transações */
+ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+li {
+  background: #f0eefa; /* branco com toque roxo */
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3c2f6b;
+}
+
+/* Diferenciar receitas e despesas */
+li.receita {
+  border-left: 6px solid #4caf50; /* verde */
+}
+
+li.despesa {
+  border-left: 6px solid #f44336; /* vermelho */
+}
+
+/* Scrollbar estilizada */
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: #f5f3fa;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #7c4dff; /* roxo */
+  border-radius: 10px;
+}
+
+/* Botão apagar */
+.btn-delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #f44336; /* vermelho */
+  font-weight: 700;
+  transition: color 0.3s ease;
+  margin-left: 12px;
+  border-radius: 6px;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+.btn-delete:hover {
+  color: #b71c1c; /* vermelho mais escuro */
+  background-color: #fdecea;
+}
+
+/* Tooltip do gráfico */
+.recharts-tooltip-wrapper {
+  background: #7c4dff !important;
+  border-radius: 8px !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Legend do gráfico */
+.recharts-legend-wrapper {
+  color: #3c2f6b !important;
+  font-weight: 700 !important;
+}
